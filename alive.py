@@ -10,7 +10,7 @@ from dotenv import load_dotenv
 load_dotenv('config.env')
 
 try:
-    BASE_URL = os.environ.get('BASE_URL_OF_BOT', None)
+    BASE_URL = os.environ.get('BASE_URL_OF_BOT', "https://own-mirror-bot-a.herokuapp.com")
     if len(BASE_URL) == 0:
         BASE_URL = None
 except KeyError:
